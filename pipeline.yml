@@ -3,25 +3,25 @@ gitRepoCredentialsId: "Jenkins-GitHub-Read-Write-Token"
 docker_build:
   # Don't specify dockerfile or buildContext
   - artifactoryPath: test_1
-    gitlabPath: cschroedl/eb-99
+    gitlabPath: wma/docker/eb-99-test
     dockerImageName: test_1
     numberImagesToKeep: 5
   # Custom dockerfile and buildContext
   - artifactoryPath: test_2
-    gitlabPath: cschroedl/eb-99
+    gitlabPath: wma/docker/eb-99-test
     dockerImageName: test_2
     dockerfile: ./test-2/Dockerfile
     buildContext: .
     numberImagesToKeep: 10
   # Custom Dockerfile only
   - artifactoryPath: test_3
-    gitlabPath: cschroedl/eb-99
+    gitlabPath: wma/docker/eb-99-test
     dockerImageName: test_3
     dockerfile: ./test-3/Dockerfile
     numberImagesToKeep: 2
   # Custom buildContext only
   - artifactoryPath: test_1
-    gitlabPath: cschroedl/eb-99
+    gitlabPath: wma/docker/eb-99-test
     dockerImageName: test_4
     buildContext: ./test-4
     numberImagesToKeep: 2
