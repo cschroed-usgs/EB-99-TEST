@@ -1,0 +1,23 @@
+gitRepoUrl: "https://github.com/cschroed-usgs/EB-99-TEST.git"
+gitRepoCredentialsId: "Jenkins-GitHub-Read-Write-Token"
+docker_build:
+  - artifactoryPath: test_1
+    gitlabPath: cschroedl/eb-99
+    dockerImageName: test_1
+    dockerFileDirectory: ./test-1
+    numberImagesToKeep: 5
+  - artifactoryPath: test_2
+    gitlabPath: cschroedl/eb-99
+    dockerImageName: test_2
+    dockerFileDirectory: ./test-2
+    numberImagesToKeep: 10
+  - artifactoryPath: test_3
+    gitlabPath: cschroedl/eb-99
+    dockerImageName: test_3
+    dockerFileDirectory: ./test-3
+    numberImagesToKeep: 2
+  - artifactoryPath: test_1
+    gitlabPath: cschroedl/eb-99
+    dockerImageName: test_4
+    dockerFileDirectory: ./test-4
+    numberImagesToKeep: 2
