@@ -15,6 +15,7 @@ docker_build:
     buildContext: .
     numberImagesToKeep: 10
     deployJobName: EB-99-Test-Deploy
+    preferArtifactory: true
   # Custom Dockerfile in child directory
   - artifactoryPath: test_3
     gitlabPath: wma/docker/eb-99-test
